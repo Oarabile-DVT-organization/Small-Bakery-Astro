@@ -1,0 +1,21 @@
+---
+import "../styles/global.css"
+import bakerImage from '../assets/pastry chef-cuate.svg'
+---
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img
+      src={bakerImage.src}
+      class="w-[55%]"
+    />
+    <div>
+        <h1 class="text-5xl font-bold">Welcome user!</h1>
+        <p class="py-6">
+            Fresh baked every morning with love and the finest ingredients. 
+            From our oven to your table experience the warmth of homemade bread, 
+            pastries, and more at The Golden Crust.
+        </p>
+      <button class="btn btn-primary" style={{background:"#FFC100", border:"#FFC100"}}>Menu</button>
+    </div>
+  </div>
+</div>
