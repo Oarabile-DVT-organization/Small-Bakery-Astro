@@ -1,0 +1,25 @@
+---
+import { menu } from "../data/menu"
+import "../styles/global.css"
+---
+<div class="flex flex-wrap justify-center">
+    {
+        menu.map(item => (
+            <div class="card bg-base-100 w-96 shadow-sm m-[1%] ">
+                <figure>
+                    <img
+                    src={item.image}
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">{item.name}</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary" style={{background:"#FFC100", border:"#FFC100"}}>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        ))
+    }
+</div>
+
