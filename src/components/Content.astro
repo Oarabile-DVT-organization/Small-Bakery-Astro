@@ -3,33 +3,37 @@ import BackerImage from "../assets/Marketplace-amico.svg"
 import OtherImage from "../assets/Baker-cuate.svg"
 ---
 <section class="m-[5%]">
-    <div class="flex flex-wrap justify-center items-center">
-        <div class="w-[35%] mr-[3%]">
+    <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-12">
+        <div class="w-full max-w-[420px] lg:w-[35%]">
             <img 
                 src={BackerImage.src}
-                alt=""
+                alt="Bakery order and delivery illustration"
                 class="w-[100%]"
             >
         </div>
-        <div>
-            <h3 class="text-4xl font-bold">Always here for you</h3>
-            <p class="mt-[3.5%]">This is the content next to the image</p>
-            <button class="btn btn-primary float-right mt-5" style={{background:"#FFC100", border:"#FFC100"}}>Menu</button>
+        <div class="max-w-xl">
+            <h3 class="text-4xl font-bold">Baked for everyday moments</h3>
+            <p class="mt-[3.5%] text-lg text-base-content/75">
+                Whether it is a quick breakfast, a family lunch, or a sweet treat with coffee, our bakery brings comfort and flavour to every part of the day.
+            </p>
+            <a href="/MenuPage" class="btn btn-primary mt-5" style={{background:"#FFC100", border:"#FFC100", color:"#1f2937"}}>View menu</a>
         </div>
     </div>
 </section>
 
-<section class="mt-[2%]">
-    <div class="flex justify-center items-center">
-        <div class="mr-[3%]"> 
-            <h3 class="text-4xl font-bold">Always here for you</h3>
-            <p class="mt-[3.5%]">This is the content next to the image</p>
-            <button class="btn btn-primary mt-5" style={{background:"#FFC100", border:"#FFC100"}}>Menu</button>
+<section class="mt-[2%] pb-12">
+    <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-12">
+        <div class="max-w-xl"> 
+            <h3 class="text-4xl font-bold">Fresh flavours, local love</h3>
+            <p class="mt-[3.5%] text-lg text-base-content/75">
+                We use honest ingredients, traditional techniques, and a little bit of patience to create loaves and pastries that feel as good as they taste.
+            </p>
+            <a href="/MenuPage" class="btn btn-primary mt-5" style={{background:"#FFC100", border:"#FFC100", color:"#1f2937"}}>See today’s picks</a>
         </div>
-        <div class="w-[35%]">
+        <div class="w-full max-w-[420px] lg:w-[35%]">
             <img 
                 src={OtherImage.src}
-                alt=""
+                alt="Bakery artisan preparing fresh bread"
                 class="w-[100%]"
             >
         </div>

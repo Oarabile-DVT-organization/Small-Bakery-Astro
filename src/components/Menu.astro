@@ -2,24 +2,31 @@
 import { menu } from "../data/menu"
 import "../styles/global.css"
 ---
-<div class="flex flex-wrap justify-center">
-    {
-        menu.map(item => (
-            <div class="card bg-base-100 w-96 shadow-sm m-[1%] ">
-                <figure>
-                    <img
-                    src={item.image}
-                    alt="Shoes" />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title">{item.name}</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary" style={{background:"#FFC100", border:"#FFC100"}}>Buy Now</button>
+<div class="mx-auto max-w-7xl px-4 py-10">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {
+            menu.map(item => (
+                <div class="card bg-base-100 shadow-sm overflow-hidden">
+                    <figure class="h-64 overflow-hidden">
+                        <img
+                            src={item.image}
+                            alt={item.name}
+                            class="h-full w-full object-cover"
+                        />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center justify-between gap-4">
+                            <h2 class="card-title text-xl">{item.name}</h2>
+                            <span class="text-lg font-semibold text-amber-700">{item.price}</span>
+                        </div>
+                        <p class="text-sm text-base-content/70">{item.calories}</p>
+                        <div class="card-actions justify-end mt-2">
+                            <button class="btn btn-primary" style={{background:"#FFC100", border:"#FFC100", color:"#1f2937"}}>Buy Now</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        ))
-    }
+            ))
+        }
+    </div>
 </div>
 

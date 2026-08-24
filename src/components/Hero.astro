@@ -3,19 +3,20 @@ import "../styles/global.css"
 import bakerImage from '../assets/pastry chef-cuate.svg'
 ---
 <div class="hero bg-base-200 min-h-screen">
-  <div class="hero-content flex-col lg:flex-row-reverse">
+  <div class="hero-content flex-col lg:flex-row-reverse gap-10">
     <img
       src={bakerImage.src}
-      class="w-[55%]"
+      class="w-[55%] max-w-[500px]"
+      alt="Bakery owner baking fresh bread"
     />
-    <div>
-        <h1 class="text-5xl font-bold">Welcome user!</h1>
-        <p class="py-6">
-            Fresh baked every morning with love and the finest ingredients. 
-            From our oven to your table experience the warmth of homemade bread, 
-            pastries, and more at The Golden Crust.
+    <div class="max-w-xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Fresh from the oven</p>
+        <h1 class="text-5xl font-bold leading-tight">The Golden Crust Bakery</h1>
+        <p class="py-6 text-lg text-base-content/80">
+            Slow-fermented sourdough, buttery pastries, and handcrafted loaves baked fresh every morning.
+            We bring the warmth of a neighbourhood bakery to your table with simple ingredients and a whole lot of care.
         </p>
-      <button class="btn btn-primary" style={{background:"#FFC100", border:"#FFC100"}}>Menu</button>
+      <a href="/MenuPage" class="btn btn-primary" style={{background:"#FFC100", border:"#FFC100", color:"#1f2937"}}>Explore the menu</a>
     </div>
   </div>
 </div>
